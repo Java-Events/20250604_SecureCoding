@@ -17,7 +17,7 @@
     <name>secure-coding-practices</name>
     <url>http://svenruppert.com/</url>
     <modules>
-<!--        <module>module-01</module>-->
+        <module>module-01</module>
 <!--        <module>inputvalidation</module>-->
 <!--        <module>sqlinjection</module>-->
 <!--        <module>fuzzing</module>-->
