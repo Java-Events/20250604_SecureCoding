@@ -29,6 +29,6 @@ public class LargeTestFileGenerator {
     }
 
     long finalSize = Files.size(largeFile);
-    assertEquals(fileSizeBytes, finalSize, "Generated file must be exactly 1 GB");
+    assertEquals(fileSizeBytes, finalSize, "Generated file must be exactly xx GB");
   }
 }
