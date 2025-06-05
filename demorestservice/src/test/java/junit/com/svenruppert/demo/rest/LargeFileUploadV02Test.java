@@ -54,7 +54,8 @@ public class LargeFileUploadV02Test {
       assertTrue(Files.exists(uploaded), "Uploaded large file must exist");
 
       long uploadedSize = Files.size(uploaded);
-      assertEquals(FILE_SIZE_BYTES, uploadedSize, "Uploaded file size mismatch - expected: " + FILE_SIZE_BYTES + ", actual: " + uploadedSize);
+      assertEquals(FILE_SIZE_BYTES, uploadedSize, "Uploaded file size mismatch - expected: "
+                                                  + FILE_SIZE_BYTES + ", actual: " + uploadedSize);
 
     } catch (IOException e) {
       fail("Upload failed with exception: " + e.getMessage());
