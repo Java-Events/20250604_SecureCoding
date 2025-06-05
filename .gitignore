@@ -1,1 +1,4 @@
 /mutationtesting/target/
+/java-agent/service/target/
+/java-agent/target/
+/java-agent/agent/target/
