@@ -2,8 +2,6 @@ package com.svenruppert.demo.rest.server.handler;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import com.svenruppert.demo.rest.server.SimpleFileRestServerV01;
-import com.svenruppert.demo.rest.server.SimpleFileRestServerV02;
 
 import java.io.IOException;
 import java.io.InputStream;
