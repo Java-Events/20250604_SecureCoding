@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 
-import static com.svenruppert.demo.rest.server.SimpleFileRestServerV02.DATA_DIR;
+import static com.svenruppert.demo.rest.server.SimpleFileRestServerV01.DATA_DIR;
 
 public class DownloadHandlerV01
     implements HttpHandler {

@@ -2,6 +2,7 @@ package com.svenruppert.demo.rest.server.handler;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
+import com.svenruppert.demo.rest.server.SimpleFileRestServerV01;
 import com.svenruppert.demo.rest.server.SimpleFileRestServerV02;
 
 import java.io.IOException;
@@ -11,6 +12,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
+
+import static com.svenruppert.demo.rest.server.SimpleFileRestServer.DATA_DIR;
 
 public class UploadHandlerV01
     implements HttpHandler {
@@ -26,7 +29,7 @@ public class UploadHandlerV01
         .orElse("unknown_" + System.currentTimeMillis());
 
     fileName = Paths.get(fileName).getFileName().toString(); // sanitize
-    Path filePath = SimpleFileRestServerV02.DATA_DIR.resolve(fileName);
+    Path filePath = DATA_DIR.resolve(fileName);
 
     try (InputStream is = exchange.getRequestBody();
          OutputStream os = Files.newOutputStream(filePath)) {

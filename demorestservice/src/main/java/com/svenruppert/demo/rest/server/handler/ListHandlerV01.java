@@ -2,7 +2,7 @@ package com.svenruppert.demo.rest.server.handler;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import com.svenruppert.demo.rest.server.SimpleFileRestServerV02;
+import static com.svenruppert.demo.rest.server.SimpleFileRestServerV01.DATA_DIR;
 
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
@@ -21,7 +21,7 @@ public class ListHandlerV01
     }
 
     StringBuilder response = new StringBuilder();
-    try (DirectoryStream<Path> stream = Files.newDirectoryStream(SimpleFileRestServerV02.DATA_DIR)) {
+    try (DirectoryStream<Path> stream = Files.newDirectoryStream(DATA_DIR)) {
       for (Path file : stream) {
         if (Files.isRegularFile(file)) {
           response.append(file.getFileName())
