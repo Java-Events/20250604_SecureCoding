@@ -43,6 +43,12 @@ public class SecureCharArrayWriter
     this.count = 0;
   }
 
+  @Override
+  public void reset() {
+    super.reset();
+    Arrays.fill(buf, (char) 0);
+  }
+
   public static void main(String[] args) throws IOException {
     SecureCharArrayWriter writer = new SecureCharArrayWriter();
     writer.write("Hallo Welt!");
