@@ -1,8 +1,10 @@
 package junit.com.svenruppert.demo.rest;
 
 import com.svenruppert.demo.rest.client.SimpleFileRestClient;
+import com.svenruppert.demo.rest.client.SimpleFileRestClientV01;
 import com.svenruppert.demo.rest.client.SimpleFileRestClientV02;
 import com.svenruppert.demo.rest.server.SimpleFileRestServer;
+import com.svenruppert.demo.rest.server.SimpleFileRestServerV01;
 import com.svenruppert.demo.rest.server.SimpleFileRestServerV02;
 import org.junit.jupiter.api.*;
 
